@@ -26,6 +26,10 @@ beat_schedule = {
         'task': 'x_keywords',
         'schedule': crontab(hour='3', minute='00', day_of_week='monday')
     },
+    'ga4': {
+        'task': 'ga4',
+        'schedule': crontab(hour='5', minute='00', day_of_week='monday')
+    },
     'test': {
         'task': 'test',
         'schedule': crontab(minute='*')
