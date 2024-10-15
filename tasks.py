@@ -38,6 +38,12 @@ def x_keywords():
     return requests.get(_url).json()
 
 
+@cel.task(name='ga4')
+def ga4():
+    _url = f"{base_url}:{dataAnalysis_port}/ga4"
+    return requests.get(_url).json()
+
+
 @cel.task(name='test')
 def test():
     _url = f"{base_url}:{dataAnalysis_port}/pis_dashboards_task"
