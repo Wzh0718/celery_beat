@@ -30,12 +30,12 @@ beat_schedule = {
         'task': 'ga4',
         'schedule': crontab(hour='5', minute='00', day_of_week='monday')
     },
-    'test': {
-        'task': 'test',
-        'schedule': crontab(minute='*')
-    },
+    # 'test': {
+    #     'task': 'test',
+    #     'schedule': crontab(minute='*')
+    # },
     'celebrity': {
-        'task': 'video',
+        'task': 'celebrity',
         'schedule': crontab(day_of_month='15', hour='3', minute='00'),
     },
     'video': {
