@@ -43,7 +43,7 @@ beat_schedule = {
         'schedule': crontab(day_of_week='0,1,3,5', hour='0', minute='30')
     },
     'logistics_9:00': {
-        'task': 'logistics_9:00',
+        'task': 'logistics',
         'schedule': crontab(hour='9', minute='00')
     },
     'logistics_13_30': {
