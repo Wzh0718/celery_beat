@@ -66,3 +66,9 @@ def celebrity():
 def celebrity():
     _url = f"{base_url}:{Influencer_Data_Management_System_port}/scheduler/logistics"
     return requests.get(_url).json()
+
+
+@cel.task(name='guanyi')
+def celebrity():
+    _url = f"{base_url}:{dataAnalysis_port}/guanyi"
+    return requests.get(_url).json()
