@@ -63,12 +63,12 @@ def celebrity():
 
 
 @cel.task(name='logistics')
-def celebrity():
+def logistics():
     _url = f"{base_url}:{Influencer_Data_Management_System_port}/scheduler/logistics"
     return requests.get(_url).json()
 
 
-@cel.task(name='guanyi')
-def celebrity():
-    _url = f"{base_url}:{dataAnalysis_port}/guanyi"
+@cel.task(name='tmallOrder')
+def tmallOrder():
+    _url = f"{base_url}:{dataAnalysis_port}/tmallOrder"
     return requests.get(_url).json()

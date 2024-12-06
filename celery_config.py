@@ -50,8 +50,8 @@ beat_schedule = {
         'task': 'logistics',
         'schedule': crontab(hour='13', minute='30')
     },
-    'guanyi_00_30': {
-        'task': 'guanyi',
-        'schedule': crontab(hour='00', minute='30')
+    'tmallOrder_01_30': {
+        'task': 'tmallOrder',
+        'schedule': crontab(hour='01', minute='30')
     }
 }
