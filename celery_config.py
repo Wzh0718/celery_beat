@@ -54,7 +54,7 @@ beat_schedule = {
     #     'task': 'tmallOrder',
     #     'schedule': crontab(hour='01', minute='30')
     # }
-    },
+    # },
     'weatherDaily': {
         'task': 'weatherDaily',
         'schedule': crontab(hour='9', minute='00')
