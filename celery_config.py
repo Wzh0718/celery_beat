@@ -40,7 +40,7 @@ beat_schedule = {
     },
     'video': {
         'task': 'video',
-        'schedule': crontab(minute='0', hour='*/3')
+        'schedule': crontab(minute='00', hour='0')
     },
     'logistics_9:00': {
         'task': 'logistics',
@@ -49,6 +49,11 @@ beat_schedule = {
     'logistics_13_30': {
         'task': 'logistics',
         'schedule': crontab(hour='13', minute='30')
+    },
+    # 'tmallOrder_01_30': {
+    #     'task': 'tmallOrder',
+    #     'schedule': crontab(hour='01', minute='30')
+    # }
     },
     'weatherDaily': {
         'task': 'weatherDaily',
