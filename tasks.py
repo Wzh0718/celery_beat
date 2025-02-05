@@ -75,6 +75,6 @@ def tmallOrder():
 
 
 @cel.task(name='weatherDaily')
-def celebrity():
+def weatherDaily():
     _url = f"{base_url}:{dataAnalysis_port}/weatherDaily"
     return requests.get(_url).json()
