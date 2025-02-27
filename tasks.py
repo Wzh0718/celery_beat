@@ -5,6 +5,7 @@
 @Author：Libre
 @Time：2024/10/14 上午11:12
 """
+from os import name
 import requests
 
 from celery_beat import cel
@@ -77,4 +78,9 @@ def tmallOrder():
 @cel.task(name='weatherDaily')
 def weatherDaily():
     _url = f"{base_url}:{dataAnalysis_port}/weatherDaily"
+    return requests.get(_url).json()
+
+@cel.task(name="coupang_sales_info")
+def coupang_sales_info():
+    _url = f"{base_url}:{dataAnalysis_port}/ziNiao/coupang/get_sales_info"
     return requests.get(_url).json()

@@ -58,5 +58,9 @@ beat_schedule = {
     'weatherDaily': {
         'task': 'weatherDaily',
         'schedule': crontab(hour='9', minute='00')
+    },
+    'coupang_sales_info': {
+        'task': 'coupang_sales_info',
+        'schedule': crontab(hour='4', minute='00')
     }
 }
