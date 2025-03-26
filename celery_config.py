@@ -7,8 +7,8 @@
 """
 from celery.schedules import crontab
 
-backend = "redis://default:My$trongP@ssw0rd123!@172.16.11.120:6379/0"
-broker = "redis://default:My$trongP@ssw0rd123!@172.16.11.120:6379/1"
+backend = "redis://default:My$trongP@ssw0rd123!@172.16.11.167:6379/0"
+broker = "redis://default:My$trongP@ssw0rd123!@172.16.11.167:6379/1"
 beat_schedule = {
     'pis_dashboards_task': {
         'task': 'pis_dashboards_task',
