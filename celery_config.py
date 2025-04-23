@@ -22,10 +22,10 @@ beat_schedule = {
         'task': 'saiHu_keywords',
         'schedule': crontab(hour='7', minute='00', day_of_week='monday')
     },
-    'x_keywords': {
-        'task': 'x_keywords',
-        'schedule': crontab(hour='3', minute='00', day_of_week='monday')
-    },
+    # 'x_keywords': {
+    #     'task': 'x_keywords',
+    #     'schedule': crontab(hour='3', minute='00', day_of_week='monday')
+    # },
     'ga4': {
         'task': 'ga4',
         'schedule': crontab(hour='5', minute='00', day_of_week='monday')
